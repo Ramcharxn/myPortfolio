@@ -61,14 +61,14 @@ function submitForm(e) {
     document.getElementById('contactForm').reset();
 }
 const firebaseConfig = {
-    apiKey: "AIzaSyCih5mPMwjIrLDREz7BqB6FYcNVwVodhGE",
-    authDomain: "portfolio2-a344c.firebaseapp.com",
-    databaseURL: "https://portfolio2-a344c-default-rtdb.firebaseio.com/",
-    projectId: "portfolio2-a344c",
-    storageBucket: "portfolio2-a344c.appspot.com",
-    messagingSenderId: "850676962234",
-    appId: "1:850676962234:web:12b6a7603934fdb8268383",
-    measurementId: "G-VF6QDPYH9X"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 };
 
 firebase.initializeApp(firebaseConfig);

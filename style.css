@@ -184,16 +184,59 @@ nav .sticky{
     font-family: 'Signika Negative', sans-serif;
     font-size: 60px;
 }
-#Home .content a{
+#Home .content .line3{
     font-family: 'Signika Negative', sans-serif;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    border: 3px solid white;
+    width: 250px;
+    /* border: 3px solid white; */
+    background-color: rgb(255, 255, 255);
     text-decoration: none;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease-in;
+}
+#Home .line3 .text{
+    background-color: #3e0068;
+    padding: 0 20px;
+    transition: 0.2s ease-in;
+    clip-path:polygon(100% 0%,95% 50%, 100% 100%, 0% 100%, 0% 0%);
+}
+#Home .svg{
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+#Home .line3 svg{
+    width: 30px;
+    height: 30px;
+}
+#Home .line3 path{
+    fill: #3e0068;
+    transition: 0.2s ease-in;
+}
+
+#Home .content .line3:hover{
+    background-color: #3e0068 ;
+    color: #3e0068;
+}
+#Home .line3:hover .text{
+    background-color: #fff;
+    padding: 0 20px;
+    clip-path:polygon(100% 0%,95% 50%, 100% 100%, 0% 100%, 0% 0%);
+}
+#Home .svg{
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#Home .line3:hover path{
+    fill: #fff;
 }
 
 @media screen and (max-width:768px) {
@@ -378,6 +421,7 @@ nav .sticky{
     border: 5px solid white;
     border-radius: 5px;
     width: 750px;
+    max-height: 400px;
     height: auto;
     object-fit: cover;
 }
@@ -486,7 +530,7 @@ nav .sticky{
 #Contact .others .info{
     font-size: 20px;
     letter-spacing: 2px;
-    color: white;
+    color: black;
     text-transform: uppercase;
     display: inline-block;
     position: relative;
@@ -505,7 +549,7 @@ nav .sticky{
 }
 #Contact .others div:nth-child(2){
     font-size: 16px;
-    color: white;
+    color: black;
 }
 #Contact .others div:nth-child(2) .phone{
     text-decoration: none;
